@@ -11,18 +11,54 @@
       gtag('js', new Date());
       gtag('config', 'UA-153172310-1');
     </script>
+    <style media="screen">
+      a {
+        color:black;
+        text-decoration: none;
+      }
+      #grid {
+        display: grid;
+        grid-template-columns: 150px 1fr;
+      }
+      h1 {
+        font-size:50px;
+        text-align: center;
+        border-bottom: 1px gray solid;
+        margin: 0;
+        padding: 20px;
+      }
+      ol {
+        border-right: 1px gray solid;
+        width: 100px;
+        margin: 0;
+        padding: 25px;
+      }
+      #grid ol {
+        padding-left: 35px;
+      }
+      body {
+        margin:0;
+      }
+      #grid #article {
+        padding-left:25px;
+      }
+    </style>
   </head>
   <body>
     <h1><a href="index.html">Classic</a></h1>
-    <ol>
-      <li><a href="1.html">MOVIE</a></li>
-      <li><a href="2.html">NOVEL</a></li>
-      <li><a href="3.html">DRAMA</a></li>
-    </ol>
-    <h2><a href="https://en.wikipedia.org/wiki/Classic" target="_blank" title="Classic-Wikepedia">Classic</a></h2>
-    <p>
-      A <strong>classic</strong> is an outstanding example of a particular style; something of lasting worth or with a timeless quality; of the first or highest quality, class, or rank[1] – something that exemplifies its class. The word can be an adjective (a classic car) or a noun (a classic of English literature). It denotes a particular quality in art, architecture, literature, design, technology, or other cultural artifacts. In commerce, products are named 'classic' to denote a long-standing popular version or model, to distinguish it from a newer variety. Classic is used to describe many major, long-standing sporting events. Colloquially, an everyday occurrence (e.g. a joke or mishap) may be described in some dialects of English as 'an absolute classic'.
-    </p>
+    <div id="grid">
+      <ol>
+        <li><a href="1.html">MOVIE</a></li>
+        <li><a href="2.html">NOVEL</a></li>
+        <li><a href="3.html">DRAMA</a></li>
+      </ol>
+      <div id="article">
+        <h2><a href="https://en.wikipedia.org/wiki/Classic" target="_blank" title="Classic-Wikepedia">Classic</a></h2>
+        <p>
+          A <strong>classic</strong> is an outstanding example of a particular style; something of lasting worth or with a timeless quality; of the first or highest quality, class, or rank[1] – something that exemplifies its class. The word can be an adjective (a classic car) or a noun (a classic of English literature). It denotes a particular quality in art, architecture, literature, design, technology, or other cultural artifacts. In commerce, products are named 'classic' to denote a long-standing popular version or model, to distinguish it from a newer variety. Classic is used to describe many major, long-standing sporting events. Colloquially, an everyday occurrence (e.g. a joke or mishap) may be described in some dialects of English as 'an absolute classic'.
+        </p>
+      </div>
+    </div>
     <p>
       <div id="disqus_thread"></div>
       <script>
